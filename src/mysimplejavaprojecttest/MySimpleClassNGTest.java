@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
- */
+
 package mysimplejavaprojecttest;
 
 import mysimplejavaproject.MySimpleClass;
@@ -42,6 +39,20 @@ public class MySimpleClassNGTest {
         MySimpleClass instance = new MySimpleClass();
         int expResult = 4;
         int result = instance.get_diff(a, b);
+        assertEquals(result, expResult);
+    }
+
+    /**
+     * Test of get_product method, of class MySimpleClass.
+     */
+    @Test
+    public void testGet_product() {
+        System.out.println("get_product");
+        int a = 5;
+        int b = 6;
+        MySimpleClass instance = new MySimpleClass();
+        int expResult = 30;
+        int result = instance.get_product(a, b);
         assertEquals(result, expResult);
     }
     
